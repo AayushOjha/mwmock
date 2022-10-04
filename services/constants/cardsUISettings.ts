@@ -1,4 +1,4 @@
-import { ICardOptionalSettings } from '../Interfaces/card'
+import { ICardOptionalSettings } from '../oldInterfaces/card'
 
 const twoColumnCardSetting: ICardOptionalSettings = {
   fieldVisiablity: {

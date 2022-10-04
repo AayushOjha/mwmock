@@ -1,4 +1,4 @@
-import { IHeaderOptionalSettings } from '../Interfaces/header'
+import { IHeaderOptionalSettings } from '../oldInterfaces/header'
 
 const twoColumnHeaderSetting: IHeaderOptionalSettings = {
   fieldVisiablity: {

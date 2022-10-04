@@ -1,4 +1,4 @@
-import { CardTypes } from '../../services/Interfaces/card'
+import { CardTypes } from '../oldInterfaces/card'
 
 interface IcardType {
   name: string
@@ -6,6 +6,7 @@ interface IcardType {
 }
 
 export const cardType: IcardType[] = [
+  // for ui purposes
   { name: '2 Column', value: CardTypes.twoColumn },
   { name: '3 Column', value: CardTypes.threeColumn },
   { name: '4 Column', value: CardTypes.fourColumn },
