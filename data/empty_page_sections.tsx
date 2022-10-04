@@ -1,4 +1,4 @@
-import { IEditor } from '../services/Interfaces/Editor';
+import { IEditor } from '../services/Interfaces/editor';
 
 const emptySections: IEditor = {
   sections: [],
