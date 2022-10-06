@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { singleSections } from '../../../../../../../../../data/single_section';
-import { ISection } from '../../../../../../../../../services/Interfaces/section';
+import { ISection } from '../../../../../../../../../services/Interfaces/editor';
 
 export default function handler(
   req: NextApiRequest,

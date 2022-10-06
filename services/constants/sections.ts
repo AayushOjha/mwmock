@@ -1,4 +1,4 @@
-export enum EComponentType {
+export enum ESectionType {
   product = 'product',
   faq = 'faq',
   links = 'links',
@@ -6,7 +6,7 @@ export enum EComponentType {
   card = 'card',
 }
 
-export enum EComponentName {
+export enum ESectionName {
   product = 'Products',
   faq = 'F&Q',
   links = 'Links',
