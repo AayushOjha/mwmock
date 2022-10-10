@@ -7,9 +7,9 @@ export enum ESectionType {
 }
 
 export enum ESectionName {
-  product = 'Products',
-  faq = 'F&Q',
-  links = 'Links',
-  review = 'Reviews',
-  card = 'Cards',
+  product = 'Product Section',
+  faq = 'F & Q',
+  links = 'Quick Links',
+  review = 'Review Section',
+  card = 'Card Section',
 }

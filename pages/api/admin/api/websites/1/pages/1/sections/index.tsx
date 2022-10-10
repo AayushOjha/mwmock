@@ -1,11 +1,19 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { emptySections } from '../../../../../../../../../data/empty_page_sections';
-import { sections } from '../../../../../../../../../data/page_sections';
-import { IEditor } from '../../../../../../../../../services/Interfaces/Editor';
+import {
+  sections,
+  sections_with_empty_section,
+} from '../../../../../../../../../data/page_sections';
+import { IEditor } from '../../../../../../../../../services/Interfaces/editor';
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<IEditor>
+  res: NextApiResponse<IEditor | null>
 ) {
-  res.status(200).json(sections);
+  if (req.method === 'GET') {
+    res.status(200).json(sections);
+  } else if (req.method === 'POST') {
+    res.status(201).json(sections_with_empty_section);
+  } else {
+    res.status(404).json(null);
+  }
 }
